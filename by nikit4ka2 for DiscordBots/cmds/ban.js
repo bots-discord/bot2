@@ -6,8 +6,8 @@ module.exports.run = async (bot,message,args) => {
       
     if(!message.member.hasPermission("BAN_MEMBERS")) return message.channel.send("У вас нет прав");
     let rUser = bot.rUser;
-    if(!args[0]) return bot.send("Вы не указали пользователя");
-    if(!rUser) return bot.send("Пользователь не найден");
+    if(!args[0]) return bot.send("Вы не указали пользователя!");
+    if(!rUser) return bot.send("Пользователь не найден!");
     let embed = new Discord.RichEmbed()
     .setDescription("Бан")
     .setColor('#e22216')
